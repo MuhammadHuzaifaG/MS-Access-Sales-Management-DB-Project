@@ -1,10 +1,12 @@
-# Relational Database Management and Analytical Querying System
+# MS Access Sales Management DB and Querying Project
 
 ## Overview
 
-This project implements a relational database structure designed to manage and analyze core business operations, including customer records, product inventory, sales transactions, order details, and sales personnel performance. Using Microsoft Access as the database engine, the system centralizes data inputs and provides structured SQL queries for operational reporting and business intelligence.
+This project implements a relational database structure designed to manage and analyze core business operations, including customer records, product inventory, sales transactions, order details, and sales personnel performance. Using **Microsoft Access** as the database engine, the system centralizes data inputs and provides structured SQL queries for operational reporting and business intelligence.
 
 ---
+
+<img src="https://github.com/MuhammadHuzaifaG/MS-Access-Sales-Management-DB-Project/blob/main/Dashboard.PNG" alt="Description of Image" width="1000" height="auto">
 
 ## Project Description
 
@@ -36,6 +38,8 @@ The relational model consists of five primary tables:
 5. **SalesPersons**: Tracks internal staff details and employment history.
    - *Columns:* `SalesPerson`, `FirstName`, `LastName`, `WorkPhone`, `HireDate`
 
+<img src="https://github.com/MuhammadHuzaifaG/MS-Access-Sales-Management-DB-Project/blob/main/Relationship.PNG" alt="Description of Image" width="1000" height="auto">
+
 ---
 
 ## Technology Stack
@@ -53,25 +57,6 @@ The relational model consists of five primary tables:
 
 ---
 
-## Local Setup Instructions
-
-1. **Initialize the Database:**
-   - Open Microsoft Access and create a new blank desktop database.
-2. **Import or Create Tables:**
-   - Create the five tables (`Customers`, `Orders`, `Order Details`, `Products`, and `SalesPersons`) using the column definitions outlined in the Data Context section.
-   - Populate the tables with initial records or import data from the corresponding Excel sheets.
-3. **Establish Relationships:**
-   - Navigate to **Database Tools** > **Relationships**.
-   - Add all five tables to the relationship window.
-   - Link `Customers.CustomerID` to `Orders.CustmerID`.
-   - Link `Orders.OrderID` to `Order Details.OrderID`.
-   - Link `Products.ProductID` to `Order Details.ProductID`.
-   - Link `SalesPersons.SalesPerson` to `Orders.SalesPerson`.
-4. **Execute Queries:**
-   - Go to **Create** > **Query Design**, close the show table dialog, and switch to **SQL View** to run custom analytical queries.
-
----
-
 ## Analytical Results Summary
 
 Below is a summary structure of key operational metrics derived from the database queries:
@@ -85,6 +70,8 @@ Below is a summary structure of key operational metrics derived from the databas
 ---
 
 ## Custom SQL Queries
+
+<img src="https://github.com/MuhammadHuzaifaG/MS-Access-Sales-Management-DB-Project/blob/main/screenshots/Sales%20Analysis%20Query.PNG" alt="Description of Image" width="1000" height="auto">
 
 ### 1. Customer's Orders
 This query retrieves comprehensive order information combined with customer demographic and contact data using an inner join.
